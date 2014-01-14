@@ -6,7 +6,6 @@
 	Ini_Set( 'display_errors', true );
 
 	include("assets/php/service.class.php");
-	include("assets/php/link.class.php");
 	include("assets/php/serverstats.php");
 	$services = array(
 		new service("OwnCloud", '<a href="/owncloud/"><img alt="OwnCloud" src="assets/img/owncloud.png" /></a> ', '<img alt="OwnCloud" src="assets/img/owncloud_offline.png" /> ', 80),
