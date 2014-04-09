@@ -3,6 +3,8 @@ BODY {
     width: calc(100% - 20px);
     max-width: 1000px;
     transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
     background: URL(/assets/img/background.png);
 }
 
