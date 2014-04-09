@@ -1,0 +1,11 @@
+CACHE MANIFEST
+      
+# VERSION 1
+
+CACHE:
+/assets/css/batchsearch.css
+/batchsearch.html
+http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css
+
+NETWORK:
+*

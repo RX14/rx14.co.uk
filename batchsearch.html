@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" manifest="assets/manifest/batchsearch.appcache">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <title>Batch google search</title> 
@@ -7,37 +7,7 @@
   <!-- Latest compiled and minified CSS -->
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
-  <style type='text/css'>
-    BODY {
-    margin-left: 50%;
-    width: calc(100% - 20px);
-    max-width: 1000px;
-    transform: translate(-50%, 0);
-}
-U {
-    color: red;
-}
-TEXTAREA {
-    resize: none;
-}
-.margins {
-    margin-top: 10px;
-}
-#prefix {
-    width: calc(50% - 5px);
-    float: left;
-}
-#suffix {
-    width: calc(50% - 5px);
-    float: right;
-}
-#go {
-    float: right;
-}
-#main {
-    float: left;
-}
-  </style>
+  <link href="assets/css/batchsearch.css" rel="stylesheet">
   
 </head>
 
@@ -51,8 +21,7 @@ TEXTAREA {
   
 
 
-<script type='text/javascript'>//<![CDATA[ 
-
+<script type='text/javascript'>
 function go() {
     var o = document.getElementById("main").value.split("\n");
     var prefix = document.getElementById("prefix").value;
@@ -67,8 +36,6 @@ function go() {
         }
     });
 }
-//]]>  
-
 </script>
 
 
