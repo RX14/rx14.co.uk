@@ -14,38 +14,40 @@
 
   <body>
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  
-    ga('create', 'UA-37656746-4', 'rx14.co.uk');
-    ga('send', 'pageview');
-  </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-37656746-4', 'rx14.co.uk');
+      ga('send', 'pageview');
+    </script>
 
-    <noscript>
-      <div class="bs-callout bs-callout-danger">
-        <h4>You <b>CANNOT</b> use this site without JavaScript.</h4>
-        <p>Here are the <a href="http://www.enable-javascript.com/" target="_blank"> instructions how to enable JavaScript in your web browser</a>.</p>
+    <div id="main">
+      <noscript>
+        <div class="bs-callout bs-callout-danger">
+          <h4>You <b>CANNOT</b> use this site without JavaScript.</h4>
+          <p>Here are the <a href="http://www.enable-javascript.com/" target="_blank"> instructions how to enable JavaScript in your web browser</a>.</p>
+        </div>
+      </noscript>
+  
+      <div class="bs-callout bs-callout-warning">
+        <h4>This <b>WILL</b> open many tabs!</h4>
+        <p>This application opens each search query in a new tab, no questions asked.
+        Make sure you don't put in 2000 search terms and get a crash out!</p>
       </div>
-    </noscript>
-
-    <div class="bs-callout bs-callout-warning">
-      <h4>This <b>WILL</b> open many tabs!</h4>
-      <p>This application opens each search query in a new tab, no questions asked.
-      Make sure you don't put in 2000 search terms and get a crash out!</p>
-    </div>
+    
+      <p>This tool is ued to google search many items at the same time. One simply pastes a list of terms to google in the search terms box
+      and this tool opens up search queries. You can even specify a prefix and suffix to each search query!</p>
   
-    <p>This tool is ued to google search many items at the same time. One simply pastes a list of terms to google in the search terms box
-    and this tool opens up search queries. You can even specify a prefix and suffix to each search query!</p>
-
-    <!-- Main form! -->
-    <input id="prefix" placeholder="Prefix" class="form-control margins" type="text">
-    <input id="suffix" placeholder="Suffix" class="form-control margins" type="text">
-    <textarea class="form-control margins" id="main" name="input" placeholder="Search terms" rows="10"></textarea>
-    <button type="button" id="clear" name="Clear" class="btn btn-default margins" onclick="clr()">Clear</button>
-    <button type="button" id="go" name="GO" class="btn btn-primary margins" onclick="go()">Google it!</button>
+      <!-- Main form! -->
+      <input id="prefix" placeholder="Prefix" class="form-control margins" type="text">
+      <input id="suffix" placeholder="Suffix" class="form-control margins" type="text">
+      <textarea class="form-control margins" id="input" name="input" placeholder="Search terms" rows="10"></textarea>
+      <button type="button" id="clear" name="Clear" class="btn btn-default margins" onclick="clr()">Clear</button>
+      <button type="button" id="go" name="GO" class="btn btn-primary margins" onclick="go()">Google it!</button>
+    </div>
   
     <!-- AddThis Button BEGIN -->
     <div class="addthis_toolbox addthis_floating_style addthis_counter_style" style="left:50px;top:50px;">
@@ -61,7 +63,7 @@
     <script type='text/javascript'>
       function go()
       {
-          var o = document.getElementById("main").value.split("\n");
+          var o = document.getElementById("input").value.split("\n");
           var prefix = document.getElementById("prefix").value;
           var suffix = document.getElementById("suffix").value;
           
@@ -80,7 +82,7 @@
       
       function clr()
       {
-          document.getElementById("main").value = "";
+          document.getElementById("input").value = "";
           document.getElementById("prefix").value = "";
           document.getElementById("suffix").value = "";    
       }
