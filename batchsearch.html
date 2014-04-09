@@ -1,45 +1,66 @@
 <!DOCTYPE html>
-<html lang="en" manifest="assets/manifest/batchsearch.appcache">
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>Batch google search</title> 
+<html lang="en" manifest="assets/manifest/batchsearch.appcache" >
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Batch google search</title> 
+    
+    <!-- Latest compiled and minified CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="assets/css/batchsearch.css" rel="stylesheet">
   
-  <!-- Latest compiled and minified CSS -->
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  </head>
 
-  <link href="assets/css/batchsearch.css" rel="stylesheet">
+  <body>
+    <noscript>
+      <div class="bs-callout bs-callout-danger">
+        <h4>You <b>CANNOT</b> use this site without JavaScript.</h4>
+        <p>Here are the <a href="http://www.enable-javascript.com/" target="_blank"> instructions how to enable JavaScript in your web browser</a>.</p>
+      </div>
+    </noscript>
+
+    <div class="bs-callout bs-callout-warning">
+      <h4>This <b>WILL</b> open many tabs!</h4>
+      <p>This application opens each search query in a new tab, no questions asked.
+      Make sure you don't put in 2000 search terms and get a crash out!</p>
+    </div>
   
-</head>
+    <p>This tool is ued to google search many items at the same time. One simply pastes a list of terms to google in the search terms box
+    and this tool opens up search queries. You can even specify a prefix and suffix to each search query!</p>
 
-<body>
-  <noscript>You <u>CANNOT</u> use this site without JavaScript. Here are the <a href="http://www.enable-javascript.com/" target="_blank">
- instructions how to enable JavaScript in your web browser</a>.</noscript>
-<input id="prefix" placeholder="prefix" class="form-control margins" type="text">
-<input id="suffix" placeholder="suffix" class="form-control margins" type="text">
-<textarea class="form-control margins" id="main" name="input" placeholder="search terms seperated by newlines" rows="10"></textarea>
-<button type="button" id="go" name="GO" class="btn btn-primary margins" onclick="go()">Google it!</button>
+    <!-- Main form! -->
+    <input id="prefix" placeholder="Prefix" class="form-control margins" type="text">
+    <input id="suffix" placeholder="Suffix" class="form-control margins" type="text">
+    <textarea class="form-control margins" id="main" name="input" placeholder="Search terms" rows="10"></textarea>
+    <button type="button" id="clear" name="Clear" class="btn btn-default margins" onclick="clr()">Clear</button>
+    <button type="button" id="go" name="GO" class="btn btn-primary margins" onclick="go()">Google it!</button>
   
-
-
-<script type='text/javascript'>
-function go() {
-    var o = document.getElementById("main").value.split("\n");
-    var prefix = document.getElementById("prefix").value;
-    var suffix = document.getElementById("suffix").value;
-    o.forEach(function (entry) {
-        if (entry !== "") {
-            var conc = prefix + " " + entry + " " + suffix;
-            var formatted = encodeURIComponent(conc);
-            var url = "https://google.com/search?q=" + formatted;
-            console.log(url);
-            window.open(url, '_blank');
-        }
-    });
-}
-</script>
-
-
-</body>
-
-
+    <script type='text/javascript'>
+      function go()
+      {
+          var o = document.getElementById("main").value.split("\n");
+          var prefix = document.getElementById("prefix").value;
+          var suffix = document.getElementById("suffix").value;
+          
+          o.forEach(function (entry)
+          {
+              if (entry !== "")
+              {
+                  var conc = prefix + " " + entry + " " + suffix;
+                  var formatted = encodeURIComponent(conc);
+                  var url = "https://google.com/search?q=" + formatted;
+                  console.log("BatchSearch is opening \"" + url + "\" in a new tab...");
+                  window.open(url, '_blank');
+              }
+          });
+      }
+      
+      function clr()
+      {
+          document.getElementById("main").value = "";
+          document.getElementById("prefix").value = "";
+          document.getElementById("suffix").value = "";    
+      }
+    </script>
+  </body>
 </html>                                                          
