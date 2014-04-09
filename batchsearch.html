@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Batch google search</title> 
+  
+  <!-- Latest compiled and minified CSS -->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <style type='text/css'>
+    BODY {
+    margin-left: 50%;
+    width: calc(100% - 20px);
+    max-width: 1000px;
+    transform: translate(-50%, 0);
+}
+U {
+    color: red;
+}
+TEXTAREA {
+    resize: none;
+}
+.margins {
+    margin-top: 10px;
+}
+#prefix {
+    width: calc(50% - 5px);
+    float: left;
+}
+#suffix {
+    width: calc(50% - 5px);
+    float: right;
+}
+#go {
+    float: right;
+}
+#main {
+    float: left;
+}
+  </style>
+  
+</head>
+
+<body>
+  <noscript>You <u>CANNOT</u> use this site without JavaScript. Here are the <a href="http://www.enable-javascript.com/" target="_blank">
+ instructions how to enable JavaScript in your web browser</a>.</noscript>
+<input id="prefix" placeholder="prefix" class="form-control margins" type="text">
+<input id="suffix" placeholder="suffix" class="form-control margins" type="text">
+<textarea class="form-control margins" id="main" name="input" placeholder="search terms seperated by newlines" rows="10"></textarea>
+<button type="button" id="go" name="GO" class="btn btn-primary margins" onclick="go()">Google it!</button>
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+
+function go() {
+    var o = document.getElementById("main").value.split("\n");
+    var prefix = document.getElementById("prefix").value;
+    var suffix = document.getElementById("suffix").value;
+    o.forEach(function (entry) {
+        if (entry !== "") {
+            var conc = prefix + " " + entry + " " + suffix;
+            var formatted = encodeURIComponent(conc);
+            var url = "https://google.com/search?q=" + formatted;
+            console.log(url);
+            window.open(url, '_blank');
+        }
+    });
+}
+//]]>  
+
+</script>
+
+
+</body>
+
+
+</html>                                                          
