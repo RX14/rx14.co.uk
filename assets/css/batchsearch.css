@@ -1,5 +1,5 @@
 BODY {
-    background: URL(/assets/img/background.png);
+    background: URL(//rx14.co.uk/assets/img/background.png);
 }
 
 #main {
@@ -32,6 +32,26 @@ TEXTAREA {
     #prefix, #suffix {
         width: calc(50% - 5px);
     }
+}
+
+/* When it doesn't fit hide social media.*/
+@media screen and (max-width: 1160px) {
+    .addthis_toolbox.desktop {
+        visibility: hidden;
+        display: none; 
+    }
+}
+
+/* When it doesn't fit hide social media.*/
+@media screen and (min-width: 1160px) {
+    .addthis_toolbox.mobile {
+        visibility: hidden;
+        display: none; 
+    }
+}
+
+.addthis_toolbox.mobile {
+    margin-left: calc(50% - 122px);
 }
 
 /* small devices */
