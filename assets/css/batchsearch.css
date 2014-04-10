@@ -27,40 +27,6 @@ TEXTAREA {
     float: right;
 }
 
-/*On desktop make prefix and suffix side-by-side*/
-@media screen and (min-width: 750px) {
-    #prefix, #suffix {
-        width: calc(50% - 5px);
-    }
-}
-
-/* When it doesn't fit hide social media.*/
-@media screen and (max-width: 1160px) {
-    .addthis_toolbox.desktop {
-        visibility: hidden;
-        display: none; 
-    }
-}
-
-/* When it doesn't fit hide social media.*/
-@media screen and (min-width: 1160px) {
-    .addthis_toolbox.mobile {
-        visibility: hidden;
-        display: none; 
-    }
-}
-
-.addthis_toolbox.mobile {
-    margin-left: calc(50% - 122px);
-}
-
-/* small devices */
-@media screen and (max-width: 750px) {
-    #main {
-        min-width: 90%;
-    }
-}
-
 #go {
     float: right;
 }
@@ -75,6 +41,75 @@ TEXTAREA {
     margin-top: 0px
     text-align: center;
 }
+
+.addthis_toolbox.mobile {
+    margin-left: calc(50% - 122px);
+}
+
+/*------BEGIN RESPONSIVE------*/
+/*On desktop make prefix and suffix side-by-side*/
+@media screen and (min-width: 750px) {
+    #prefix, #suffix {
+        width: calc(50% - 5px);
+    }
+}
+
+/* When it doesn't fit hide social media.*/
+@media screen and (max-width: 1160px) {
+    .addthis_toolbox.desktop {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 1s, opacity 1s linear;
+    }
+    
+    .addthis_toolbox.mobile {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+    }
+}
+
+/* When it doesn't fit hide gh fork.*/
+@media screen and (max-width: 1260px) {
+    #gh-fork {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 1s, opacity 1s linear;
+    }
+}
+
+/* When it doesn't fit hide gh fork.*/
+@media screen and (min-width: 1260px) {
+    #gh-fork {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+    }
+}
+
+/* When it doesn't fit hide social media.*/
+@media screen and (min-width: 1160px) {
+    .addthis_toolbox.mobile {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 1s, opacity 1s linear; 
+    }
+    
+    .addthis_toolbox.desktop {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+    }
+}
+
+/* small devices */
+@media screen and (max-width: 750px) {
+    #main {
+        min-width: 90%;
+    }
+}
+
+/*------END RESPONSIVE------*/
 
 /* Callouts from the bootstrap website.*/
 
