@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/rx14
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://rx14.co.uk
+  * I am rx14 (https://keybase.io/rx14) on keybase.
+  * I have a public key ASCNZill_9c8sp9nfSxSmtZEjRgbF2xw113OJhSeC835JQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010113ca19c4caee7c9027a0f3e9f2319542b1f298a5f537fea98e34465fe1374db30a",
+      "host": "keybase.io",
+      "kid": "01208d662965ffd73cb29f677d2c529ad6448d181b176c70d75dce26149e0bcdf9250a",
+      "uid": "e93628865b784a86ca1c8c19bfe4e819",
+      "username": "rx14"
+    },
+    "merkle_root": {
+      "ctime": 1501150812,
+      "hash": "78ae47bc7a7551f8b00dbae0e58abc0ef14f34930eb4c321708b5639e94d0b312f86dc1f84f62ff0f1da66df6db3e6d66d9af714775620efbae6fbf6028ece62",
+      "hash_meta": "820dd55d6088e07e5d0d48eca3854a189d35d7bdcd45d2b52ada00deb806f2fe",
+      "seqno": 1284430
+    },
+    "service": {
+      "hostname": "rx14.co.uk",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.27"
+  },
+  "ctime": 1501150823,
+  "expire_in": 504576000,
+  "prev": "14499949d7cfda849b59798b37974e35a6b7596fe9c63fb7c0f78e9af45c81fa",
+  "seqno": 91,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgjWYpZf/XPLKfZ30sUprWRI0YGxdscNddziYUngvN+SUKp3BheWxvYWTFAz97ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxMTNjYTE5YzRjYWVlN2M5MDI3YTBmM2U5ZjIzMTk1NDJiMWYyOThhNWY1MzdmZWE5OGUzNDQ2NWZlMTM3NGRiMzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwOGQ2NjI5NjVmZmQ3M2NiMjlmNjc3ZDJjNTI5YWQ2NDQ4ZDE4MWIxNzZjNzBkNzVkY2UyNjE0OWUwYmNkZjkyNTBhIiwidWlkIjoiZTkzNjI4ODY1Yjc4NGE4NmNhMWM4YzE5YmZlNGU4MTkiLCJ1c2VybmFtZSI6InJ4MTQifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MDExNTA4MTIsImhhc2giOiI3OGFlNDdiYzdhNzU1MWY4YjAwZGJhZTBlNThhYmMwZWYxNGYzNDkzMGViNGMzMjE3MDhiNTYzOWU5NGQwYjMxMmY4NmRjMWY4NGY2MmZmMGYxZGE2NmRmNmRiM2U2ZDY2ZDlhZjcxNDc3NTYyMGVmYmFlNmZiZjYwMjhlY2U2MiIsImhhc2hfbWV0YSI6IjgyMGRkNTVkNjA4OGUwN2U1ZDBkNDhlY2EzODU0YTE4OWQzNWQ3YmRjZDQ1ZDJiNTJhZGEwMGRlYjgwNmYyZmUiLCJzZXFubyI6MTI4NDQzMH0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJyeDE0LmNvLnVrIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMjcifSwiY3RpbWUiOjE1MDExNTA4MjMsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiMTQ0OTk5NDlkN2NmZGE4NDliNTk3OThiMzc5NzRlMzVhNmI3NTk2ZmU5YzYzZmI3YzBmNzhlOWFmNDVjODFmYSIsInNlcW5vIjo5MSwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEBeBDwRcFUyPmYa6iOTNCA/dmtfUKwPgwAZYwTMElwgalUqfjgvb99Hdao87HiD8qvkAec8TjtXHJbpzgzfke4DqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgadP4slq3r7/raF/YHMG6aBzLAbKGPERURqKRwsH7kYSjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rx14
+
+==================================================================
