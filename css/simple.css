@@ -1,12 +1,25 @@
 body {
   margin: 1em auto;
+  margin-bottom: 4em;
   max-width: 40em;
   padding: 0 0.62em;
-  font: 1.2em/1.62 sans-serif;
+
+  font-family: sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4;
 }
 
 h1, h2, h3 {
   line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  max-height: 95vh;
+}
+
+span[title] {
+  border-bottom: 1px dotted black;
 }
 
 @media print {
